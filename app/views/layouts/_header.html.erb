@@ -1,0 +1,27 @@
+  <div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- Button for smallest screens -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"><%= image_tag("cassava.png", :size => "70x70", :class=> "img-circle") %></a>
+      </div>
+      <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav pull-left">
+        <li class="active">
+          <b class="notice"><%= notice %></b>
+          <b class="alert"><%= alert %></b>
+        </li>
+      </ul>
+        <ul class="nav navbar-nav pull-right">
+         <li class="active"><%= link_to "Home", root_path %></li>
+         <li class="active"><%= link_to "Methodology", pages_about_path %></li>
+         <li class= "active"><%= link_to "Contact", pages_contact_path %></li>
+         <li class= ""><a> <i  href="http://www.facebook.com/nashvillemusiccity" class="fa fa-facebook btn btn-block btn-primary"></i></a></li>
+         <li class= ""><a> <i href="http://twitter.com/visitmusiccity" class="fa fa-twitter btn btn-info"></i></a></li>
+         <li class= ""><a><i href="http://www.youtube.com/nashvillemusiccity" class="fa fa-youtube btn btn-danger"></i></a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div> 
+  
+  <!-- /.navbar -->

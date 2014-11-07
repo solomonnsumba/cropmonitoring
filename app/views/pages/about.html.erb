@@ -1,0 +1,120 @@
+
+
+	<header id="head" class="secondary" background-image = "http://www.Image-Link.png"></header>
+ 
+
+
+	<!-- container -->
+	<div class="container">
+					 <a class="navbar-brand" href="index.html"><%= image_tag("team.jpg", :size => "250x250") %></a>
+
+
+
+		<ol class="breadcrumb">
+			
+		</ol>
+
+		<div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-sm-8 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Project Implementation</h1>
+				</header>
+				
+
+				<h3>
+					<font color="#007700">MOBILE DATA COLLECTION IN THE FIELD</font>
+
+				</h3>
+
+				<h2 class="thin"><%= image_tag("odk.png", :size => "250x250 :float => left") %><% @strategies.each do |strategy| %>
+	                    	<%= strategy.title %>
+		                </h2>
+		                    <p class="text-muted">
+			                 <%= strategy.description %>
+			                  <% end %>
+			                  </p>
+
+			        <a class="navbar-brand" href="index.html"></a>
+
+
+				<h3>
+					 <font color="#007700">OUR TEAM IN THE FIELD</font>
+				</h3>
+
+				<h2 class="thin"><%= image_tag("datacollection.jpg", :size => "250x250 :float => left") %><% @approaches.each do |approach| %>
+	                    	<%= approach.title %>
+		                </h2>
+		                    <p class="text-muted">
+			                 <%= approach.description %>
+			                  <% end %>
+			                  </p>
+
+
+			    <h3>
+			     <font color="#007700">MAPPING THE DISEASE SPREAD</font></h3>
+			     <a class="navbar-brand" href="index.html"></a>
+
+
+				<h2 class="thin"><%= image_tag("diseasecontour.png", :size => "250x250 :float => left") %><% @benefits.each do |benefit| %>
+	                    	<%= benefit.title %>
+		                </h2>
+		                    <p class="text-muted">
+			                 <%= benefit.description %>
+			                  <% end %>
+			                  </p>
+
+
+			  
+				<h3>
+                <font color="#007700">SPECTROMETRY MOBILE PHONE add-ons</font>
+				</h3>
+			     <a class="navbar-brand" href="index.html"></a>
+
+
+				<h2 class="thin"><%= image_tag("SpectraSnapp-web.jpg", :size => "250x250 :float => left") %><% @spectrometers.each do |spectrometer| %>
+	                    	<%= spectrometer.title %>
+		                </h2>
+		                    <p class="text-muted ">
+			                 <%= spectrometer.description %>
+			                  <% end %>
+			                  </p>
+
+
+
+
+
+
+			    <h3>
+                       <font color="#007700">SPATIO TEMPORAL MODELING</font>
+			    </h3>
+
+			     <a class="navbar-brand" href="index.html"></a>
+
+
+				<h2 class="thin"><%= image_tag("spatialTemporalModelling.jpg", :size => "250x250 :float => left") %><% @spatials.each do |spatial| %>
+	                    	<%= spatial.title %>
+		                </h2>
+		                    <p class="text-muted">
+			                 <%= spatial.description %>
+			                  <% end %>
+			                  </p>
+								
+			</article>
+			<!-- /Article -->
+			
+			<!-- Sidebar -->
+			<aside class="col-sm-4 sidebar sidebar-right">
+
+				<div class="widget">
+					
+				</div>
+
+			</aside>
+			<!-- /Sidebar -->
+
+		</div>
+	</div>	<!-- /container -->
+
+	

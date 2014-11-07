@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cropmonitoring</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style type="text/css">
+  #head { background:#181015 url("assets/leaf.png") no-repeat; background-size: cover; min-height:520px; text-align: center; padding-top:240px; color:white; font-family:"Open sans", Helvetica, Arial; font-weight:300; }
+  </style>
+</head>
+<body>
+ <%= render :partial => 'layouts/header' %>
+     <%= yield %>
+
+<%= render :partial => 'layouts/footer' %>
+
+</body>
+</html>

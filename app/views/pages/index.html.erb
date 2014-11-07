@@ -1,0 +1,102 @@
+	<header id="head">
+		<div class="container well">
+			<div class="row">
+				<h1 class="lead">AI DEV MOBILE CROP DISEASE MONITORING</h1>
+				<p class="tagline">MCROP: Crop Surveilence <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus">WELCOME</a></p>
+				<p><%= link_to "More info", pages_about_path, :class=> "btn btn-lg"%></p>
+			</div>
+		</div>
+	</header>
+	<!-- /Header -->
+
+	<!-- Intro -->
+	<div class="container well">
+		
+		<h2 class="thin"><% @homes.each do |home| %>
+		<%= home.title %>
+		</h2>
+		<p class="text-muted">
+			<%= home.description %>
+			<% end %>
+			
+		</p>
+	</div>
+	<!-- /Intro-->
+		
+	<!-- Highlights - jumbotron -->
+	<div class="container well">
+			
+			<h3 class="text-center thin">Reasons to work with us</h3>
+			
+			<div class="row">
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><%= image_tag("ic_launcher.png", :class=> "img-circle")%>Android-powered</h4></div>
+					<div class="h-body text-center">
+						<h2 class="thin"><% @methodologies.each do |methodologie| %>
+	                    	
+		                </h2>
+		                    <p class="text-muted">
+			                 <%= methodologie.description %>
+			                  <% end %>
+			                  </p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><%= image_tag("team.jpg", :class=> "img-circle")%>Self Motivated</h4></div>
+					<div class="h-body text-center">
+						<h2 class="thin"><% @writings.each do |writing| %>
+	                    	<%= writing.title %>
+		                </h2>
+		                    <p class="text-muted">
+			                 <%= writing.description %>
+			                  <% end %>
+			                  </p>
+		
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><%= image_tag("MUK.jpg", :class=> "img-circle")%>Creative Commons</h4></div>
+					<div class="h-body text-center">
+						<h2 class="thin"><% @partners.each do |partner| %>
+	                    	
+		                </h2>
+		                    <p class="text-muted">
+			                 <%= partner.description %>
+			                  <% end %>
+			                  </p> 
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption"><h4><i class="fa fa-smile-o fa-5"></i>Team support</h4></div>
+					<div class="h-body text-center">
+						<h2 class="thin"><% @teamsupports.each do |teamsupport| %>
+	                    	
+		                </h2>
+		                    <p class="text-muted">
+			                 <%= teamsupport.description %>
+			                  <% end %>
+			                  </p>
+
+
+					</div>
+				</div>
+			</div> <!-- /row  -->
+
+			<div class="container">
+			                  <div class="row">
+		   <!--  <ul class="social-links">
+
+             <li><a href="http://twitter.com/visitmusiccity" class="twitter-icon">twitter</a></li>
+                <li><a href="http://www.facebook.com/nashvillemusiccity" class="facebook-icon">facebook</a></li>
+                <li><a href="http://www.youtube.com/nashvillemusiccity" class="youtube-icon">youtube</a></li>
+            </ul>
+            -->
+
+            </div>
+		</div>
+		
+		</div>
+	</div>
+	<!-- /Highlights -->
+
+	
