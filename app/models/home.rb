@@ -1,3 +1,3 @@
-class Home < ActiveRecord::Base
+																								class Home < ActiveRecord::Base
 	
 end
