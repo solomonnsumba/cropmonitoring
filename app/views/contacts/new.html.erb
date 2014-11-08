@@ -1,16 +1,34 @@
-<div align="center">
+
+<div class="row">
+<div class="col-xs-8 col-sm-4"></div>
+<div class="col-xs-8 col-sm-4 well">
+
   <h3>Send A message to Us</h3>
 
-  <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
-    <%= f.input :name, :required => true %>
-    <%= f.input :email, :required => true %>
-    <%= f.input :message, :as => :text, :required => true %>
+  <%= simple_form_for @contact, :class => 'form-horizontal'  do |f| %>
+    <div>
+      <%= f.text_field :name, :required => true, :class=> "form-control", :placeholder => "Enter your name here" %>
+    </div><br/>
+    <div>
+      <%= f.text_field :email, :required => true, :class=> "form-control", :placeholder => "Email address"%>
+    </div><br/>
+    <div>
+      <%= f.text_area :message, :as => :text, :required => true, :class=> "form-control", :placeholder => "Message"%>
+    </div>
     <div class= "hidden">
       <%= f.input :nickname, :hint => 'Leave this field blank!' %>
     </div>
     <div>
       </br>
-      <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
+      <%= f.button :submit, 'Send message', :class=> "btn btn-block btn-primary" %>
     </div>
   <% end %>
+
+</div>
+<div class="col-xs-8 col-sm-4">
+  <h2> Address</h2>
+  <p>
+      Plot 56, Makerere University Pool Road, Wandegeya/P.O. Box 7062 Fcit -pool Rd, Kampala, Uganda</p>
+  <p>Phone: +256 41 4540628</p>
+</div>
 </div>
