@@ -4,6 +4,10 @@
 				<h1 class="lead">AI DEV MOBILE CROP DISEASE MONITORING</h1>
 				<p class="tagline">MCROP: Crop Surveilence <a href="http://www.gettemplate.com/?utm_source=progressus&amp;utm_medium=template&amp;utm_campaign=progressus"></a></p>
 				<p><%= link_to "More info", pages_about_path, :class=> "btn btn-lg"%></p>
+				<marquee class="well-small" behavior="alternate">
+					  <font color="green"><%= @news.title %>:&nbsp; <%= @news.description %></font>
+					  <b class="badge alert-success"><%= link_to 'read more', pages_news_path %></b>
+				</marquee>
 			</div>
 		</div>
 	</header>
