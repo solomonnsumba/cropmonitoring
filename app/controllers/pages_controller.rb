@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
  	
   def index
-    @news = New.last
+    @news = New.last || New.new
   	@homes = Home.all 
   	@writings = Writing.all
   	@teamsupports = Teamsupport.all
@@ -20,6 +20,7 @@ class PagesController < ApplicationController
 
     @spatials = Spatial.all
     @spectrometers = Spectrometer.all
+    @diagnosiss = Diagnosis.all
   end
 
 
