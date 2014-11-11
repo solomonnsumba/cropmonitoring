@@ -20,7 +20,7 @@ class PagesController < ApplicationController
 
     @spatials = Spatial.all
     @spectrometers = Spectrometer.all
-    @diagnoses = Diagnosis.all
+    @diagnosess = Diagnoses.all
   end
 
 
