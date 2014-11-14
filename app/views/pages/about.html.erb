@@ -21,7 +21,7 @@
 				<h2 class="thin"><%= image_tag("odk.png", :size => "250x250 :float => left") %><% @strategies.each do |strategy| %>
 	                    	<%= strategy.title %>
 		                </h2>
-		                    <p class="text-muted">
+		                    <p align="justify" class="text-muted">
 			                 <%= strategy.description %>
 			                  <% end %>
 			                  </p>
@@ -36,7 +36,7 @@
 				<h2 class="thin"><%= image_tag("datacollection.jpg", :size => "250x250 :float => left") %><% @approaches.each do |approach| %>
 	                    	<%= approach.title %>
 		                </h2>
-		                    <p class="text-muted">
+		                    <p align="justify" class="text-muted">
 			                 <%= approach.description %>
 			                  <% end %>
 			                  </p>
@@ -50,7 +50,7 @@
 				<h2 class="thin"><%= image_tag("diseasecontour.png", :size => "250x250 :float => left") %><% @benefits.each do |benefit| %>
 	                    	<%= benefit.title %>
 		                </h2>
-		                    <p class="text-muted">
+		                    <p align="justify" class="text-muted">
 			                 <%= benefit.description %>
 			                  <% end %>
 			                  </p>
@@ -64,7 +64,7 @@
 						<h2 class="thin"><%= image_tag("AutomatedDiagnosis.png", :size => "250x250 :float => left") %><% @diagnosiss.each do |diagnosis| %>
 			                    	<%= diagnosis.title %>
 		                </h2>
-		                    <p class="text-muted ">
+		                    <p  align="justify" class="text-muted ">
 			                 <%= diagnosis.description %>
 			                  <% end %>
 			                  </p>
@@ -80,7 +80,7 @@
 				<h2 class="thin"><%= image_tag("spectralRepresentations.png", :size => "250x250 :float => left") %><% @spectrometers.each do |spectrometer| %>
 	                    	<%= spectrometer.title %>
 		                </h2>
-		                    <p class="text-muted ">
+		                    <p align="justify" class="text-muted ">
 			                 <%= spectrometer.description %>
 			                  <% end %>
 			                  </p>
@@ -100,7 +100,7 @@
 				<h2 class="thin"><%= image_tag("spatialTemporalModelling.jpg", :size => "250x250 :float => left") %><% @spatials.each do |spatial| %>
 	                    	<%= spatial.title %>
 		                </h2>
-		                    <p class="text-muted">
+		                    <p align="justify" class="text-muted">
 			                 <%= spatial.description %>
 			                  <% end %>
 			                  </p>
